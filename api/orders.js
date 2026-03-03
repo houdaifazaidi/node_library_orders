@@ -4,6 +4,9 @@ const app = express();
 const { ObjectId } = require("mongodb");
 const axios = require("axios");
 
+
+const cors = require("cors");
+app.use(cors());
 // Import Order model
 require("./Order");
 
